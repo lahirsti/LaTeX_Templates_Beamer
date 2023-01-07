@@ -1,0 +1,45 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[norsk, UKenglish]{babel}
+%\usepackage[utf8x]{inputenc}
+
+\title[\LaTeX{} for Tekna Student]{\LaTeX{} course for Tekna Student}
+\author{Leif Andreas Hirsti}
+\institute{Tekna Ung Agder}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\include{outline.tex}
+
+\section{Plan for the day}
+\input{introduction.tex}
+\input{setup.tex}
+
+\section{Some \LaTeX{} Examples}
+\input{boxes.tex}
+\input{TablesAndFigures.tex}
+
+\include{math.tex}
+
+
+
+\end{document}
